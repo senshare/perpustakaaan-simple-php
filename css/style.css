@@ -1,0 +1,204 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #0779e4 3px solid;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header ul {
+  padding: 0;
+  list-style: none;
+}
+
+header li {
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+.logo {
+  float: left;
+  height: 50px;
+  width: 50px;
+}
+
+nav {
+  float: right;
+  margin-top: 10px;
+}
+
+.hero {
+  background: #0779e4;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #555;
+}
+
+.books {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.book-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.book {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex: 1 1 calc(25% - 20px); /* Responsive flex basis */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 300px;
+  min-height: 350px;
+}
+
+.book img {
+  max-width: 100%;
+  height: auto;
+}
+
+.book h3 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.book p {
+  font-size: 18px;
+  color: #777;
+  margin-top: auto;
+}
+
+.book:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  header ul {
+    text-align: center;
+    padding: 0;
+  }
+
+  header li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  nav {
+    float: none;
+  }
+
+  .book-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 50px 0;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .book h3 {
+    font-size: 20px;
+  }
+
+  .book p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+  }
+}

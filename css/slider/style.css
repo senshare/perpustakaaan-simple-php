@@ -1,0 +1,31 @@
+.slider {
+  width: 80%;
+  margin: auto;
+}
+
+.slider img {
+  max-width: 100%;
+  height: auto;
+}
+
+.slider .slick-slide {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.slider .slick-prev,
+.slider .slick-next {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.slider .slick-prev:before,
+.slider .slick-next:before {
+  content: "\2190";
+  /* Unicode untuk panah kiri */
+}
+
+.slider .slick-next:before {
+  content: "\2192";
+  /* Unicode untuk panah kanan */
+}
